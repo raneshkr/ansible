@@ -1,4 +1,4 @@
-- hosts: 
+- hosts: loadbalancer
   become: true
   tasks:
   - name: install nginx
