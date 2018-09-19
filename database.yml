@@ -1,4 +1,4 @@
-- hosts: database
+- hosts: dbservers
   become: true
   tasks:
     - name: install mysql-server
