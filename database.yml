@@ -2,13 +2,12 @@
   become: true
   tasks:
     - name: install mysql-server
-       apt: 
-       name:mysql 
+       apt: name:mysql-server
        state:present 
        update_cache:yes
 
     - name: ensure mysql started
        service: 
        name: mysql
-       state: started 
+       state: started
        enabled: yes
